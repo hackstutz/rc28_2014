@@ -1,0 +1,19 @@
+\documentclass{standalone}
+\usepackage{dcolumn}
+\begin{document}
+
+\begin{tabular}{ l D{.}{.}{2}D{.}{.}{2} } 
+\hline 
+  & \multicolumn{ 1 }{ c }{ Model 1 } & \multicolumn{ 1 }{ c }{ Model 2 } \\ \hline
+ %          & Model 1 & Model 2\\ 
+groupTrt   & 4.66 ^* & -0.37  \\ 
+           & (0.22)  & (0.31)  \\
+ $N$        & 20      & 20     \\ 
+$R^2$      & 0.98    & 0.07   \\ 
+adj. $R^2$ & 0.98    & 0.02   \\ 
+Resid. sd  & 0.70    & 0.70    \\ \hline
+ \multicolumn{3}{l}{\footnotesize{Standard errors in parentheses}}\\
+\multicolumn{3}{l}{\footnotesize{$^*$ indicates significance at $p< 0.05 $}} 
+\end{tabular} 
+
+\end{document}

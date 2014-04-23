@@ -1,0 +1,140 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.3.16)  23 APR 2014 18:07
+entering extended mode
+**reg_model.tex
+(C:\Users\Hackstutz\Dropbox\Git\rc28_2014\figure\reg_model.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+(C:\Users\Hackstutz\AppData\Roaming\MiKTeX\2.9\tex\latex\standalone\standalone.
+cls
+Document Class: standalone 2012/09/15 v1.1b Class to compile TeX sub-files stan
+dalone
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+\XKV@depth=\count79
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex")))
+\sa@internal=\count80
+
+(C:\Users\Hackstutz\AppData\Roaming\MiKTeX\2.9\tex\latex\standalone\standalone.
+cfg
+File: standalone.cfg 2012/09/15 v1.1b Default configuration file for 'standalon
+e' class
+) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+\sa@box=\box26
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\dcolumn.sty"
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks16
+\extratabsurround=\skip43
+\backup@length=\skip44
+))
+(C:\Users\Hackstutz\Dropbox\Git\rc28_2014\figure\reg_model.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+
+Overfull \hbox (4.59723pt too wide) detected at line 9
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 66[]$ 
+ []
+
+
+Overfull \hbox (3.8889pt too wide) detected at line 10
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 22)$ 
+ []
+
+
+Overfull \hbox (3.8889pt too wide) detected at line 11
+$\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 31)$ 
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 16.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 16.
+[1
+
+{C:/Users/Hackstutz/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(C:\Users\Hackstutz\Dropbox\Git\rc28_2014\figure\reg_model.aux) ) 
+Here is how much of TeX's memory you used:
+ 747 strings out of 494045
+ 11818 string characters out of 3145957
+ 62205 words of memory out of 3000000
+ 4087 multiletter control sequences out of 15000+200000
+ 5463 words of font info for 20 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 34i,9n,56p,192b,164s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on reg_model.pdf (1 page, 74094 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
