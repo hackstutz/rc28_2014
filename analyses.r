@@ -19,6 +19,7 @@ communities <- communities %.%
 
 ### Descriptive analyses ###
 
+# Dygraph for communities
 
 ### Regression analyses ###
 
