@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Median taxable income in tertiary sector</title>
+  <title>tertiary sector</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" href="favicon.ico">
@@ -78,7 +78,7 @@ text-indent: 100px;
 </style>
 
 <div class = 'row'>
-  <div id = "interactive/sector3" class = 'span8' style = 'height:300px;'>
+  <div id = "sector3" class = 'span8' style = 'height:300px;'>
   </div>
   <div id="status" class = 'span4'>
   </div>  
@@ -87,17 +87,20 @@ text-indent: 100px;
 <script>
   (function(){
     var params = {
- "dom": "interactive/sector3",
-"width":    800,
+ "dom": "sector3",
+"width":    600,
 "height":    400,
 "data": "./interactive/sector3.csv",
 "chart": {
- "title": "Median taxable income in tertiary sector",
-"ylabel": "ylab (not specified)",
+ "title": "tertiary sector",
+"ylabel": "Medin txable income (CHF)",
+"valueRange":[null,125000],
+"yAxisLabelWidth":75,
 "labelsDiv": document.getElementById('status'),
 "labelsDivStyles": {
  "background": "none" 
 },
+
 "strokeWidth":   0.75,
                     'CH': {
                       strokeWidth: 5  // CH gets a special value.
@@ -109,14 +112,14 @@ text-indent: 100px;
  strokeWidth: 3,  
 "highlightCircleSize":      5 
 },
-"width":    550 
+"width":    600 
 },
-"id": "interactive/sector3" 
+"id": "sector3" 
 };
     //var data = _.unzip([params.data[params.x],params.data[params.y]]);
     //params.chart.labels = [params.x,params.y];
     new Dygraph(
-      document.getElementById( 'interactive/sector3' ),
+      document.getElementById( 'sector3' ),
       params.data,
       params.chart
     );

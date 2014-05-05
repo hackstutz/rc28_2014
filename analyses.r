@@ -2,6 +2,9 @@
 library(foreign)
 library(ggplot2)
 library(dplyr)
+library(plm)
+library(sjPlot)
+library(texreg)
 
 ### Data ###
 communities <- tbl_df(read.dta("C:/Users/Hackstutz/Dropbox/PX-Daten/kontextvariablen0.02.dta")) # adjust path
@@ -17,17 +20,43 @@ communities <- communities %.%
          tert_quote=tert_abschluss/bev_kanton # share of tertiary educated
          ) 
 
-### Descriptive analyses ###
+communities <- communities %.%
+  ungroup() %.%
+  group_by(Gemeindenr) %.%
+  mutate(lag_gini_steink=lag(gini_steink))
 
-# Dygraph for communities
 
 ### Regression analyses ###
 
+fit <- plm(gini_steink~lag_gini_steink+(log(prim+0.1)+log(sek+0.1)+log(tert+0.1))*I(Jahr-1995)+log(stpf), data=communities,index="Gemeindenr")
+summary(fit)
+mytable <- capture.output(htmlreg(list(fit),
+        custom.coef.names=c("Lagged Y", "log of full-time jobs in primary sector (1995)", "log of full-time jobs in secondary sector (1995)","log of full-time jobs in tertiary sector (1995)","linear time trend","log of taxable inhabitants","Interaction: primary X linear time trend","Interaction: secondary X linear time trend","Interaction: tertiary X linear time trend"),
+        digits=4,
+        caption="",
+        leading.zero=FALSE,
+        star.symbol="\\*"
+        ))
 
-### Exporting figures ###
+# escape stars so markdown in gitbook can deal with it
+cat(gsub("\\$","",mytable))
 
-#for(fig in c("fig1","fig2","fig3")) {
-#  pdf(paste0("figure/",fig,".pdf"))
-#  print(get(fig))
-#  dev.off()
-#}
+
+### Individual Canton data
+
+load("Z:\soz\group-jann\Projekte\Ungleichheit\Daten\Obwalden\obwalden_trimmed.RData"))
+isco <- read.csv("C:/Users/Hackstutz/Dropbox/Ungleichheit/Obwalden/berufe_isco.csv")
+isco$isco2[isco$isco2<0]<-NA
+isco$sektor[isco$sektor<1]<-NA
+isco$sektor[isco$sektor>3]<-NA
+d$beruf <- tolower(d$BERUF)
+d$isco2 <- isco$isco2[match(d$beruf,isco$beruf)]
+d$isco1 <- as.numeric(substr(as.character(d$isco2),1,1))
+d$persid_jahr <- paste(d$PERSID,d$STEUERJAHR)
+d <- d[-which(duplicated(d$persid_jahr)),]
+
+fit <- lm(log(ESATZBESTKOPF+1)~SEX+factor(isco2)*I(STEUERJAHR-2001), data=d)
+summary(fit)  
+
+fit <- lm(log(ESATZBESTKOPF+1)~SEX+factor(sector)*I(STEUERJAHR-2001), data=d)
+summary(fit)  
